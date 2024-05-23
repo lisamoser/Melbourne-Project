@@ -9,6 +9,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
 }
 
 header {
@@ -58,6 +59,7 @@ footer {
     url("../images/stkildabeach.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right 35% bottom 45%;
   color: white;
   padding: 100px 0;
 }
@@ -66,7 +68,6 @@ footer p {
   font-weight: 400;
   line-height: 24px;
   opacity: 0.7;
-  margin-right: 20px;
 }
 footer ul {
   padding: 0;
