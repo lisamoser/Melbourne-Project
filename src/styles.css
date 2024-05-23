@@ -1,17 +1,24 @@
-body {
-  font-family: "Poppins", sans-serif;
-  background: black;
-}
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
 }
-
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.footer-grid {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.img-responsive {
+  width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: black;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../images/melbourne-city.jpeg");
@@ -54,6 +61,30 @@ header a {
   display: inline-block;
   margin-top: 32px;
 }
+main {
+  background-color: white;
+}
+main h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+}
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("../images/stkildabeach.jpg");
@@ -61,7 +92,6 @@ footer {
   background-size: cover;
   background-position: right 35% bottom 45%;
   color: white;
-  padding: 100px 0;
 }
 footer p {
   font-size: 16px;
@@ -84,7 +114,9 @@ footer a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -97,5 +129,12 @@ section {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
